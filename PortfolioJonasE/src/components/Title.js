@@ -1,3 +1,4 @@
+//Import required features for this component
 import React from "react"
 
 const Title = ({title}) => {

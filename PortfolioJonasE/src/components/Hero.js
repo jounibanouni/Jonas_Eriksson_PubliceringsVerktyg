@@ -1,3 +1,4 @@
+//Import required features for this component
 import React from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"

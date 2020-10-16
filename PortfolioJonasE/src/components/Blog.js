@@ -1,12 +1,16 @@
+//Import required features for this component
+
 import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
+
+
 const Blog = ({id, title, image, date, category, slug, desc}) => 
 {
   return (
     <Link to={`/blogs/${slug}`} className="blog" key={id}>
-    <article>
+    <article classname="blogs-center">
       <Image fluid={image.childImageSharp.fluid} classname="blog-img" />
       <div className="blog-card">
         <h4>{title}</h4>
@@ -21,6 +25,14 @@ const Blog = ({id, title, image, date, category, slug, desc}) =>
   )
 }
 
-Blog.propTypes = {}
+Blog.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
+  date: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+}
 
 export default Blog

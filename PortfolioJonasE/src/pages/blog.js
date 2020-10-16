@@ -4,11 +4,13 @@ import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
 
 const Blog = ({data:{allStrapiBlogs:{nodes:blogs}}}) => {
-  return <Layout>
+  return (
+  <Layout>
     <section className="blog-page">
       <Blogs blogs={blogs} title="blog" />
     </section>
-  </Layout>
+  </Layout>)
+  
 }
 
 export const query = graphql`

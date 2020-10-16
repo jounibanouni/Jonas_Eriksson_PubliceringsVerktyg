@@ -1,3 +1,5 @@
+// Create constants which can be imported wherever it is needed for easy acess.
+
 import React from "react"
 import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
 export default [

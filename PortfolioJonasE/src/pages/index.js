@@ -6,6 +6,8 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
+import SEO from "../components/SEO"
+
 export default ({data}) => {
   const{
     allStrapiProjects:{nodes:projects},
@@ -14,6 +16,7 @@ export default ({data}) => {
 
   return (
   <Layout>
+    <SEO title="Hem" description="startsida"/>
     <Hero/>
     <Services />
     <Jobs />
@@ -23,6 +26,7 @@ export default ({data}) => {
   )
 }
 
+//Get all data for projects and blogs which will be shown on index page, only featured projects will be shown and only last 3 blogs will be shown
 export const query = graphql`
   {
     allStrapiProjects(filter: {featured: {eq: true}}) {

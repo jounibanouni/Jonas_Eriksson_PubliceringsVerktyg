@@ -23,6 +23,4 @@ export const BlogCenterWrapper = styled.div`
         height: 17.5rem;
     }
 }
-
-    
 `

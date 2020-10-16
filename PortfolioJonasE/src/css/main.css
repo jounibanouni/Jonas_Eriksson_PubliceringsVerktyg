@@ -936,8 +936,7 @@ Blog
     font-size: 0.85rem;
 }
 
-
-/* @media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {
     .blogs-center {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
@@ -946,7 +945,7 @@ Blog
     .blog-img {
         height: 17.5rem;
     }
-} */
+}
 
 @media screen and (min-width: 850px) {
     .blog-img {

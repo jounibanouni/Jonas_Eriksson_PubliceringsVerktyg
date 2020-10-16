@@ -1,3 +1,4 @@
+//Import required features for this component
 import React from "react"
 import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
@@ -5,6 +6,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 import {CenterJobWrapper, BtnContainer, JobArticleWrapper} from "../elements/JobsElement"
 
+
+//Get all jobs from strapi to be shown on page
 const query = graphql`
   {
     allStrapiJobs(sort: { fields: strapiId, order: DESC }) {

@@ -1,3 +1,5 @@
+//Import required features for this component
+
 import React from "react"
 import logo from "../assets/logo.svg"
 import { FaAlignRight } from "react-icons/fa"
@@ -9,6 +11,7 @@ import {
   NavButton,
 } from "../elements/NavbarElement"
 
+//Use toggleSidebar funktion to show sidebar if clicking menu button
 const Navbar = ({ toggleSidebar}) => {
   return (
     <NavbarWrapper>
@@ -25,20 +28,5 @@ const Navbar = ({ toggleSidebar}) => {
   )
 }
 
-// const Navbar = ({toggleSidebar}) => {
-//   return (
-//   <nav className="navbar">
-//     <div className="nav-center">
-//       <div className="nav-header">
-//         <img src={logo} alt="logo"/>
-//         <button type="button" className="toggle-btn" onClick={toggleSidebar}>
-//           <FaAlignRight></FaAlignRight>
-//         </button>
-//       </div>
-//       <PageLinks styleClass="nav-links"></PageLinks>
-//     </div>
-//   </nav>
-//   )
-// }
 
 export default Navbar

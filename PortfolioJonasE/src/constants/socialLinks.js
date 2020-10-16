@@ -1,9 +1,9 @@
+// Create constants which can be imported wherever it is needed for easy acess.
+
 import React from "react"
 import {
   FaFacebookSquare,
   FaLinkedin,
-  FaDribbbleSquare,
-  FaBehanceSquare,
   FaTwitterSquare,
 } from "react-icons/fa"
 

@@ -1,3 +1,5 @@
+//Import required features for this component
+
 import React from "react"
 // import "../css/main.css"
 import Navbar from "./Navbar"

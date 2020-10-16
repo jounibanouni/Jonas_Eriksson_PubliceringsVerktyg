@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 import {WrapperAbout} from "../elements/AboutElement"
+import SEO from "../components/SEO"
 
 const About = ({
   data: {
@@ -13,6 +14,7 @@ const About = ({
   const { info, stack, title, image } = nodes[0]
   return (
     <Layout>
+      <SEO title="Om mig" description="Om mig" />
       <WrapperAbout>
         <div className="section-center about-center">
           <Image fluid={image.childImageSharp.fluid} className="about-img" />

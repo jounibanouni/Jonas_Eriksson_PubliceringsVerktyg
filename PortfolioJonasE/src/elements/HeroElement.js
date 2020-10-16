@@ -86,21 +86,3 @@ export const InfoHero = styled.article`
 }
 `
 
-/* <header className="hero">
-    <div className="section-center hero-center">
-      <article className="">
-        <div>
-          <div className="underline">
-            <h1>Jonas Eriksson</h1>
-            <h4>Systemutvecklare med lite gott & blandat</h4>
-            <Link to="/contact" className="btn">
-              Contact me
-            </Link>
-            <SocialLinks />
-          </div>
-        </div>
-
-      </article>
-      <Image fluid={fluid} className="hero-img"/>
-    </div>
-  </header> */

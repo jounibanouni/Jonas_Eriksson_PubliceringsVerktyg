@@ -1,10 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
 import {ContactWrapper, ContactForm} from "../elements/ContactElement"
+import SEO from "../components/SEO"
 
+//Form which will post form to formspree
 const contact = () => {
   return (
     <Layout>
+      <SEO title="Kontakt" description="Kontakt" />
       <ContactWrapper>
         <ContactForm>
           <h3>Kontakta mig</h3>

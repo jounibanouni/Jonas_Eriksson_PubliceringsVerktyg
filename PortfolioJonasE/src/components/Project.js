@@ -1,3 +1,4 @@
+//Import required features for this component
 import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
@@ -31,6 +32,13 @@ const Project = ({description,title,github,stack,url,image,index}) => {
   </article>
 }
 
-Project.propTypes = {}
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  git: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
+  stack: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default Project

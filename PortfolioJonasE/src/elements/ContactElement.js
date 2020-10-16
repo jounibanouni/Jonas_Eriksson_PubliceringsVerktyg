@@ -59,23 +59,3 @@ export const ContactForm = styled.article`
     border-top-left-radius: 0;
 }
 `
-
-// return (
-//     <Layout>
-//       <section className="contact-page">
-//         <article className="contact-form">
-//           <h3>Kontakta mig</h3>
-//           <form action="https://formspree.io/f/mdopewvq" method="POST">
-//             <div className="form-group">
-//               <input type="text" placeholder="namn" name="name" className="form-control" />
-//               <input type="email" placeholder="email" name="email" className="form-control" />
-//               <textarea name="message" rows="5" placeholder="meddelande" className="form-control">
-
-//               </textarea>
-//             </div>
-//             <button type="submit" className="btn submit-btn">Skicka</button>
-//           </form>
-//         </article>
-//       </section>
-//     </Layout>
-//   )
