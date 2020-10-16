@@ -55,6 +55,8 @@ export const CenterHero = styled.div`
 @media screen and (min-width: 992px) {
 
     grid-template-columns: repeat(12, 1fr);
+    border-left: 5px solid black;
+    padding: 2rem;
 
     .hero-img {
         display: block;

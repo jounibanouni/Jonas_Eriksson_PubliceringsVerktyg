@@ -13,7 +13,7 @@ export const NavbarWrapper = styled.nav`
   background: var(--clr-white);
 
   @media screen and (min-width: 992px) {
-    background: brown;
+    background: #FAEBD7;
   }
 `
 
