@@ -2,12 +2,14 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import ReactMarkdown from "react-markdown"
+import SEO from "../components/SEO"
 
 const ComponentName = ({ data }) => {
   const { content } = data.blog
 
   return (
     <Layout>
+      <SEO title="blog" description="blog" />
       <section className="blog-template">
         <div className="section-center">
           <article className="blog-content">
